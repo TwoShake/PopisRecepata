@@ -1,7 +1,7 @@
 <template>
-<div class="box" id="svastara">
+<div class="box" id="pica">
     <div>
-        <h1>Ovdje se nalaze recepti za glavna jela.</h1>
+    <h1>Ovdje se nalaze recepti za pića i koktele.</h1>
     </div>
     <div>
     <section>

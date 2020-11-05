@@ -1,13 +1,13 @@
 <template>
     <b-navbar>
         <template slot="start">
-            <b-navbar-item href="#">
-                Svaštara
+            <b-navbar-item href="#svastara">
+            Svaštara
             </b-navbar-item>
-            <b-navbar-item href="#">
+            <b-navbar-item href="#slastice">
             Slastice
             </b-navbar-item>
-            <b-navbar-item href="#">
+            <b-navbar-item href="#pica">
             Pića
             </b-navbar-item>
         </template>
@@ -20,13 +20,7 @@ export default {}
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .navbar{
-    padding-top: 50px;
+    padding-top: 25px;
     background-color: black;
-}
-b-navbar-item{
-    padding:12px;
-    margin-left:20px;
-    font-size:40px;
-    color:white;
 }
 </style>
