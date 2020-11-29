@@ -2,6 +2,7 @@
   <div id='app'>
     <navigation />
     <searchbar />
+    <apitable />
     <maindishes />
     <sweets/>
     <drinks/>
@@ -17,6 +18,7 @@ import sweets from './components/sweets.vue'
 import drinks from './components/drinks.vue'
 import foooter from './components/foooter.vue'
 import carousel from './components/carousel.vue'
+import apitable from './components/apitable.vue'
 import searchbar from './components/searchbar.vue'
 
 export default {
@@ -28,6 +30,7 @@ export default {
     drinks,
     foooter,
     carousel,
+    apitable,
     searchbar
   }
 }
