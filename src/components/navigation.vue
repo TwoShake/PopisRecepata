@@ -1,13 +1,13 @@
 <template>
     <b-navbar>
         <template slot="start">
-            <b-navbar-item href="#svastara">
-            Svaštara
+            <b-navbar-item href="#maindishes">
+            Glavna jela
             </b-navbar-item>
-            <b-navbar-item href="#slastice">
-            Slastice
+            <b-navbar-item href="#sweets">
+            Slatki kutak
             </b-navbar-item>
-            <b-navbar-item href="#pica">
+            <b-navbar-item href="#drinks">
             Pića
             </b-navbar-item>
         </template>

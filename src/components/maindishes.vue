@@ -1,5 +1,5 @@
 <template>
-<div class="box" id="svastara">
+<div class="box" id="maindishes">
     <div>
         <h1>Ovdje se nalaze recepti za glavna jela.</h1>
     </div>
@@ -46,15 +46,15 @@
                 isOpen: 0,
                 collapses: [
                 {
-                    title: 'Recept 1',
+                    title: 'Preporučeni recept 1',
                     text: 'Opis 1'
                 },
                 {
-                    title: 'Recept 2',
+                    title: 'Preporučeni recept 2',
                     text: 'Opis 2'
                 },
                 {
-                    title: 'Recept 3',
+                    title: 'Preporučeni recept 3',
                     text: 'Opis 3'
                 }
                 ]
