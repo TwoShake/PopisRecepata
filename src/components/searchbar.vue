@@ -8,7 +8,7 @@
     />
     <ul>
       <li v-for="(jela, index) in filtrirano" :key="index">
-        <pre>{{ jela }}</pre>
+        <pre>{{ jela.recipe.label }}</pre>
       </li>
     </ul>
     <pre>
@@ -27,10 +27,11 @@ export default {
   },
   async mounted() {
 
-    let response = await fetch("https://api.edamam.com/search?q=main&app_id=0668221e&app_key=9c7c1b04cbabda98396715575c6223c2");
+    let response = await fetch("https://api.edamam.com/search?q=main&app_id=0668221e&app_key=9c7c1b04cbabda98396715575c6223c2")
 
     if (response.ok) {
-      this.jela = await response.json();
+      const resp = await response.json()
+      this.jela = resp.hits
     } else {
       alert("HTTP-Error: " + response.status);
     }
@@ -38,11 +39,11 @@ export default {
   computed: {
 
     filtrirano() {
-      let filtered = [];
+      let filtered = []
       if (this.jela)
-        filtered = Object.keys(this.jela).filter((item) =>
-          item.includes(this.ime)
-        );
+        filtered = this.jela.filter((item) =>
+          item.recipe.label.toLowerCase().includes(this.ime.toLowerCase())
+        )
 
       return filtered;
     },
