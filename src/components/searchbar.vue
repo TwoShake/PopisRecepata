@@ -4,16 +4,14 @@
     <input
       type="text"
       v-model="ime"
-      placeholder="Unesite ime jela ili samo dio"
+      placeholder="Unesite ime ili dio imena jela (na engleskom)"
     />
     <ul>
       <li v-for="(jela, index) in filtrirano" :key="index">
-        <pre>{{ jela.recipe.label }}</pre>
+        <a :href="'#a'+jela.recipe.yield+jela.recipe.dietLabels[0]"><pre>{{ jela.recipe.label }}</pre></a>
+        <!-- ne ako ide van stranice onda je baš aj da se sam ubacim kod zorane u vjezbeaj -->
       </li>
     </ul>
-    <pre>
-      {{ filtrirano }}
-    </pre>
   </div>
 </template>
 
@@ -52,6 +50,7 @@ export default {
 </script>
 
 <style scoped>
+pre{padding-top: 50px;}
 div {
   text-align: left;
 }
